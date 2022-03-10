@@ -3,6 +3,10 @@
   "version": "1.0.2",
   "description": "Get random item base on percentage",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/letieu/chance-percent.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
