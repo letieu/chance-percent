@@ -6,5 +6,6 @@
     "module": "commonjs",
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true
-  }
+  },
+  "declaration": true
 }

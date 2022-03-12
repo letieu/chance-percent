@@ -4,5 +4,5 @@ export interface ChanceOption<T> {
 }
 
 declare module "chance-percent" {
-    export function random<T>(options: ChanceOption[]): T;
+    export function random<T>(options: ChanceOption<T>[]): T;
 }

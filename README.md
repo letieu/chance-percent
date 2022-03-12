@@ -1,9 +1,9 @@
 # Get random item base on percentage
 
-```javascript
 
-const { chance } = require('chance-percent')
-// import { chance } from 'chance-percent'
+## Simple usage
+```javascript
+import { random } from 'chance-percent';
 
 const options = [
   {value: 1, percentage: 10},
@@ -11,6 +11,26 @@ const options = [
   {value: 2, percentage: 30},
 ]
 
-console.log(chance(options))
+const value = random(options); // return 1, 2, 3
 
+```
+
+## Typing usage
+
+```typescript
+import { random, ChanceOption } from 'chance-percent';
+
+interface User {
+    age: number;
+    name: string;
+}
+
+const users = [{ age: 20, name: 'bob' }, { age: 40, name: 'jonh' }]
+
+const options: ChanceOption<User>[] = [
+  {value: users[1], percentage: 40},
+  {value: users[2], percentage: 60},
+]
+
+const winner: User = random<User>(options);
 ```
