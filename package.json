@@ -1,14 +1,16 @@
 {
   "name": "chance-percent",
-  "version": "1.0.3",
+  "version": "1.2.1",
   "description": "Get random item base on percentage",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/letieu/chance-percent.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "keywords": [
     "random",
@@ -16,5 +18,8 @@
     "percent"
   ],
   "author": "tieule",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  }
 }
