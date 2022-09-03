@@ -15,7 +15,7 @@ const value = random(options); // return 1, 2, 3
 
 ```
 
-## Typing usage
+## Typescript usage
 
 ```typescript
 import { random, ChanceOption } from 'chance-percent';
